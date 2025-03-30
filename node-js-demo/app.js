@@ -7,6 +7,6 @@ const server = http.createServer((req, res) => {
     res.end(`{ "status": "success", "message": "Você está aprendendo NGINX!" }`);
 });
 
-server.listen(3000, 'localhost', () => {
+server.listen(3000, '0.0.0.0', () => {
     console.log('running on http://localhost:3000/');
 });
